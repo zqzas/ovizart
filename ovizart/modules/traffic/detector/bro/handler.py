@@ -15,6 +15,10 @@ class Handler(BaseHandler):
         super(Handler, self).__init__()
         self.bro_cmd = BRO_CMD
         self.bro_cut_cmd = BRO_CUT_CMD
+        
+#note by zqzas:
+#   I see bro cmd.
+#   like you said, subprocess here is called, a little awkward...
 
     def create_reassemble_information(self, file_path, file_dir):
         # i had used -C to skip the checksum issue but with this command i got some errors on some pcaps
