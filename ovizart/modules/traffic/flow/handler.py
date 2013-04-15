@@ -15,6 +15,8 @@ class Handler:
         self.pcap_handler = handler
         self._logger = Logger(log_name="Flow Handler", log_mode=debug_mode)
         self._logger.message("Flow Handler initialized")
+        
+#note by zqzas: what about UDP?
 
     def get_tcp_flows(self, filter_type="TCP"):
         flow = dict()
