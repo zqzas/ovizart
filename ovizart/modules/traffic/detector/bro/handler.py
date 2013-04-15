@@ -21,6 +21,9 @@ class Handler(BaseHandler):
 #   like you said, subprocess here is called, a little awkward
 #   I'm thinking a better way...
 #   And I'd better take a look at Bro and tshark now.
+#
+#   Silly question.. What's the difference or relation between "detect_proto" and "detect_appproto"?  
+
 
     def create_reassemble_information(self, file_path, file_dir):
         # i had used -C to skip the checksum issue but with this command i got some errors on some pcaps
