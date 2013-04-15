@@ -17,6 +17,8 @@ class Handler(object):
         self.ident = None
         self.length = None
         self.data = None
+        #Note by zqzas:
+        # Here should be UDP, isn't it?
         self.log = Logger("TCP Protocol Handler", "DEBUG")
         self.log.message("TCP protocol handler called")
 
