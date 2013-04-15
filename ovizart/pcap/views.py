@@ -76,7 +76,8 @@ def upload(request):
                 request.session['message'] = "Error occured. Please try again."
                 return redirect('/pcap/upload')
 
-
+#note by zqzas:
+#   save to Flow model (database)
             file_type = get_file_type(file_handler.file_path)
             file_size = get_file_size(file_handler.file_path)
             flow_file, created = Flow.objects.get_or_create(user_id=user_id, hash_value=hash_value,file_name=pcap_name,
