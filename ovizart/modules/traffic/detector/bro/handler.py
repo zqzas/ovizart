@@ -23,6 +23,8 @@ class Handler(BaseHandler):
 #   And I'd better take a look at Bro and tshark now.
 #
 #   Silly question.. What's the difference or relation between "detect_proto" and "detect_appproto"?  
+#   All right.. I probabily understand after reading upload in pcap/views.py
+#   "appproto" refer to application-layer protocol, right?
 
 
     def create_reassemble_information(self, file_path, file_dir):
