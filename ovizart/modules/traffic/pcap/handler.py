@@ -24,7 +24,8 @@ class Handler:
         except:
             self._logger.set_log_level("ERROR")
             self._logger.message("Error at opening pcap file")
-
+            
+#note by zqzas: Ok.. I see dpkt stuff
     def open_pcap(self, mode="r"):
         if mode == "r":
             self._pcap = dpkt.pcap.Reader(self._file_pointer)
