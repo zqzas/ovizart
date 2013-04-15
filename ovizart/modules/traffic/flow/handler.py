@@ -18,6 +18,8 @@ class Handler:
         
 #note by zqzas: what about UDP?
 # Row_40:  if self.pcap_handler.get_filter_type() == "TCP":
+#
+#get_tcp_flows will be called when uploading pcap.
 
     def get_tcp_flows(self, filter_type="TCP"):
         flow = dict()
